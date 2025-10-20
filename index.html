@@ -73,15 +73,10 @@
         const rotatingContainer = document.getElementById('rotatingContainer');
         const galaxy = document.getElementById('galaxy');
 
-        const messages = [
-            "Lợn Bình",
-            "Bình báo",
-            "Báo thủ",
-            "Yet yet"
-        ];
+        const messages =["🌺 20/10 vui vẻ 🌸", "Linh xinh xinh  💖", "Quang Hùng MasterD","phone💖", "Su","Tí lùn"];
         const textColor = "#ff7487";
-        const imageURL = "binh.jpg";
-        const icons = ["🐷", "🐷", "🐷"];
+        const imageURL = "m.jpg";
+        const icons = ["❤️", "❤", "💗", "💕", "💖", "💘", "💝", "🌹", "🌷", "🌸", "🍀", "🎉", "✨"]
 
         const maxParticles = 150;
         const particleInterval = 800;
@@ -211,7 +206,7 @@
         let audioStarted = false;
         document.body.addEventListener('click', () => {
             if (audioStarted) return;
-            const audio = new Audio('./m.mp4');
+            const audio = new Audio('./m.mp3');
             audio.loop = true;
             audio.play().catch(() => {
                 console.log("Không thể phát nhạc tự động.");
